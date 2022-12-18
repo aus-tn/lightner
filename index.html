@@ -31,7 +31,9 @@
       window.onload = function() {
         var panZoom = svgPanZoom('#map', {
           zoomEnabled: true,
-          controlIconsEnabled: false
+          controlIconsEnabled: false,
+          dblClickZoomEnabled: true, 
+          mouseWheelZoomEnabled: true
         });
 
         document.getElementById('zoom-in').addEventListener('click', function(ev){
