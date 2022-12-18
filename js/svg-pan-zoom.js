@@ -1,5 +1,3 @@
-console.log('what the fuck');
-
 var Wheel = require("./uniwheel"),
   ControlIcons = require("./control-icons"),
   Utils = require("./utilities"),
