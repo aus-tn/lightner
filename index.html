@@ -1,20 +1,21 @@
 <html>
-  <head>
-  <script src="js/svg-pan-zoom.js"></script>
+
+<head>
+  <title>Lightner Museum Map</title>
+</head>
 </head>
 
 <body>
-  <h1>Demo for svg-pan-zoom: SVG in HTML 'object' element</h1>
-  <object id="map" type="image/svg+xml" data="img/floor-1.svg">Your browser does not support SVG</object>
 
+  <embed type="image/svg+xml" src="img/floor-1.svg" id="map" />
+  <script src="js/svg-pan-zoom.js"></script>
   <script>
-    //test
-    window.onload = function() {
-      svgPanZoom('#map', {
-        zoomEnabled: true,
-        controlIconsEnabled: true
-      });
-    };
+    document.getElementById('map').addEventListener('load', function () {
+      // Will get called after embed element was loaded
+      svgPanZoom(document.getElementById('map'));
+    })
   </script>
 
-</body></html>
+</body>
+
+</html>
