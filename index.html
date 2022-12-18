@@ -2,17 +2,27 @@
 <html>
 
   <head>
+    <title>
+      Lightner Museum Map
+    </title>
     <script src="js/svg-pan-zoom.js"></script>
   </head>
 
   <body>
-    <object id="map" type="image/svg+xml" data="img/floor-1.svg">Please update your browser to view our map</object>
+    <header>
+      <section id="logo">Logo</section>
+      <nav>Floor 1 2 3F 3R</nav>
+    </header>
 
-    <div class="controls">
-      <button id="zoom-in">Zoom in</button>
-      <button id="zoom-out">Zoom out</button>
-      <button id="reset">Reset</button>
-    </div>
+    <main style="height:100%; width: 100%;">
+      <object id="map" type="image/svg+xml" data="img/floor-1.svg">Please update your browser to view our map</object>
+
+      <div class="controls">
+        <button id="zoom-in">Zoom in</button>
+        <button id="zoom-out">Zoom out</button>
+        <button id="reset">Reset</button>
+      </div>
+    </main>
 
     <script>
       
