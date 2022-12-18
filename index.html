@@ -6,7 +6,7 @@
       Lightner Museum Map
     </title>
     <script src="js/svg-pan-zoom.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -30,8 +30,8 @@
         var panZoom = svgPanZoom('#map', {
           zoomEnabled: true,
           controlIconsEnabled: false,
-          dblClickZoomEnabled: true, 
-          mouseWheelZoomEnabled: true
+          dblClickZoomEnabled: false, 
+          mouseWheelZoomEnabled: false
         });
 
         document.getElementById('zoom-in').addEventListener('click', function(ev){
