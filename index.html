@@ -1,0 +1,16 @@
+<html><head>
+    <script src="js/svg-pan-zoom.js"></script>
+  <style type="text/css"></style></head>
+
+  <body>
+    <h1>Demo for svg-pan-zoom: SVG in HTML 'object' element</h1>
+    <object id="map" type="image/svg+xml" data="img/floor-1.svg" style="width: 500px; height: 500px; border:1px solid black; ">Your browser does not support SVG</object>
+
+    <script>
+        svgPanZoom('#map', {
+          zoomEnabled: true,
+          controlIconsEnabled: true
+        });
+    </script>
+
+</body></html>
