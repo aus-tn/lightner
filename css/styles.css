@@ -17,22 +17,27 @@ html, body {
     --lg-space: 60px;
 }
 
+/*full height for mobile*/
+main,
+nav {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */height: calc(var(--vh, 1vh) * 100);
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #map {
-    height: 90vh;
+    height: 90vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 90);
     width: 100%;
 }
 
 nav {
     background: var(--white);
     border-left: 1px solid var(--gray) !important;
-    height: 100vh;
     display: flex !important;
     flex-direction: column;
     padding: 0px var(--xs-space) !important;
