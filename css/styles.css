@@ -51,23 +51,23 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 /*resized and centered to not fill window*/
 #map {
-    height: 90vh;
+    height: 85vh;
     width: 100%;
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     z-index: 999;
     bottom: 0;
     width: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 82%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(255,0,255,0) 0%, rgba(255,255,255,1) 21%);
 }
+
 .controls {
     display: flex !important;
     justify-content: center;
