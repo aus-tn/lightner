@@ -15,6 +15,11 @@ html, body {
     --view-padding: 40px;
 }
 
+main {
+    height: 90%;
+    width: 90%;
+}
+
 nav {
     display: flex !important;
     position: absolute;
