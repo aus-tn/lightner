@@ -30,12 +30,13 @@ nav {
 
 #floor {
     margin-top: auto;
+    margin-right: var(--view-padding);
 }
 
 #floor button {
     display: inline;
     float: left;
-    margin-right: var(--view-padding);
+    margin-right: var(--btn-spacing);
 }
 
 button {
@@ -58,8 +59,6 @@ button:hover,
 .btn-active {
     background-color: var(--teal);
     color: var(--white);
-    height: var(--btn-size);
-    width: var(--btn-size);
 }
 
 #logo {
