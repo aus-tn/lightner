@@ -14,12 +14,19 @@ html, body {
     /*spacing*/
     --small-spacing: 20px;
     --medium-spacing: 40px;
+    --large-spacing: 60px;
 }
 
 header {
-    display:flex;
+    position: absolute;
+    z-index: 999;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 82%, rgba(255,255,255,0) 100%);
+}
+
+#header-container {
+    margin-top: var(--large-spacing);
+    display:flex !important;
 }
 
 #logo {
@@ -29,10 +36,6 @@ header {
 #logo img {
     width: 108px;
     height: auto;
-}
-
-#floor {
-    margin-right: var(--small-spacing);
 }
 
 main {
@@ -77,7 +80,7 @@ button {
 }
 
 button:last-of-type {
-    margin-left: 0;
+    margin-right: 0;
 }
 
 button object {
