@@ -11,19 +11,34 @@
 
   <body>
     <header>
-      <section id="logo"><img src="img/logo.png"></section>
-      <nav>Floor 1 2 3F 3R</nav>
+      <title>Lightner Museum Map</title>
     </header>
 
+    <section id="logo"><img src="img/logo.png"></section>
+    
     <main>
       <object id="map" type="image/svg+xml" data="img/floor-1.svg">Please update your browser to view our map</object>
-
-      <div class="controls">
-        <button id="zoom-in">Zoom in</button>
-        <button id="zoom-out">Zoom out</button>
-        <button id="reset">Reset</button>
-      </div>
     </main>
+
+    <nav>
+      <div id="floor">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+      </div>
+      <div class="controls">
+        <button id="zoom-in">
+          <object id="map" type="image/svg+xml" data="img/floor-1.svg">+</object>
+        </button>
+        <button id="reset">
+          <object id="map" type="image/svg+xml" data="img/floor-1.svg">100%</object>
+        </button>
+        <button id="zoom-out">
+          <object id="map" type="image/svg+xml" data="img/floor-1.svg">-</object>
+        </button>
+      </div>
+    </nav>
 
     <script>
       window.onload = function() {
