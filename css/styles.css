@@ -12,7 +12,19 @@ html, body {
     --btn-size: 50px;
     --btn-spacing: 10px;
     /*spacing*/
-    --view-padding: 40px;
+    --small-spacing: 20px;
+    --medium-padding: 40px;
+}
+
+#logo {
+    position: absolute;
+    top: 60px;
+    left: var(--medium-padding);
+}
+
+#logo img {
+    width: 120px;
+    height: auto;
 }
 
 main {
@@ -22,6 +34,7 @@ main {
     height: 100vh;
 }
 
+/*resized and centered to not fill window*/
 #map {
     height: 90vh;
     width: 100%;
@@ -31,28 +44,16 @@ nav {
     display: flex !important;
     position: absolute;
     z-index: 999;
-    bottom: var(--view-padding);
-    right: var(--view-padding);
-}
-
-/*zoom*/
-.controls button {
-    margin-bottom: var(--btn-spacing);
-    display: block;
-}
-.controls button:last-of-type {
-    margin-bottom: 0;
+    bottom: var(--medium-padding);
+    right: var(--medium-padding);
 }
 
 #floor {
-    margin-top: auto;
-    margin-right: var(--view-padding);
+    margin-right: var(--small-spacing);
 }
 
-#floor button {
-    display: inline;
-    float: left;
-    margin-right: var(--btn-spacing);
+.controls {
+    align-self: end;
 }
 
 button {
@@ -62,9 +63,16 @@ button {
     width: var(--btn-size);
     border-radius: 30px;
     border: 3px solid var(--teal);
+    margin-bottom: var(--btn-spacing);
+    display: block;
+    /*for centering icon*/
     display: flex !important;
     align-items: center;
     justify-content: center;
+}
+
+button:last-of-type {
+    margin-bottom: 0;
 }
 
 button object {
@@ -85,15 +93,4 @@ button:focus object,
 button:hover object,
 .btn-active object {
     filter: brightness(1000%); 
-}
-
-#logo {
-    position: absolute;
-    top: 60px;
-    left: var(--view-padding);
-}
-
-#logo img {
-    width: 120px;
-    height: auto;
 }
