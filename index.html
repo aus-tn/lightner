@@ -53,12 +53,14 @@
     <script>
       window.onload = function() {
         var panZoom = svgPanZoom('#map', {
-          zoomEnabled: true,
-          controlIconsEnabled: true,
-          dblClickZoomEnabled: false, 
-          mouseWheelZoomEnabled: false,
-          maxZoom: 5,
-          contain: true
+          panEnabled: true
+          , controlIconsEnabled: true
+          , zoomEnabled: true
+          , dblClickZoomEnabled: false
+          , mouseWheelZoomEnabled: false
+          , maxZoom: 5
+          , fit: true
+          , center: true
         });
 
         document.getElementById('zoom-in').addEventListener('click', function(ev){
