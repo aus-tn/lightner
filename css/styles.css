@@ -16,22 +16,26 @@ html, body {
     --medium-padding: 40px;
 }
 
-#logo {
-    position: absolute;
-    top: 60px;
-    left: var(--medium-padding);
+header {
+    display:flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 82%, rgba(255,255,255,0) 100%);
 }
 
 #logo img {
-    width: 120px;
+    width: 108px;
     height: auto;
+}
+
+#floor {
+    margin-right: var(--small-spacing);
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 /*resized and centered to not fill window*/
@@ -48,12 +52,11 @@ nav {
     right: var(--medium-padding);
 }
 
-#floor {
-    margin-right: var(--small-spacing);
-}
-
 .controls {
-    align-self: end;
+    width: 100%;
+    text-align:center;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 82%, rgba(255,255,255,0) 100%);
 }
 
 button {
