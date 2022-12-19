@@ -15,35 +15,34 @@
 
   <main>
     <object id="map" type="image/svg+xml" data="img/floor-1.svg">Please update your browser to view our map</object>
+    <nav>
+      <section id="floor">
+        <button class="btn-active">
+          <object type="image/svg+xml" data="img/icons/1.svg">1</object>
+        </button>
+        <button>
+          <object type="image/svg+xml" data="img/icons/2.svg">2</object>
+        </button>
+        <button>
+          <object type="image/svg+xml" data="img/icons/3F.svg">3F</object>
+        </button>
+        <button>
+          <object type="image/svg+xml" data="img/icons/3R.svg">3R</object>
+        </button>
+      </section>
+      <section class="controls">
+        <button id="zoom-out">
+          <object type="image/svg+xml" data="img/icons/zoom-out.svg">Zoom <br />Out</object>
+        </button>
+        <button id="reset">
+          <object type="image/svg+xml" data="img/icons/reset.svg">100%</object>
+        </button>
+        <button id="zoom-in">
+          <object type="image/svg+xml" data="img/icons/zoom-in.svg">Zoom <br />In</object>
+        </button>
+      </section>
+    </nav>
   </main>
-
-  <nav>
-    <section id="floor">
-      <button class="btn-active">
-        <object type="image/svg+xml" data="img/icons/1.svg">1</object>
-      </button>
-      <button>
-        <object type="image/svg+xml" data="img/icons/2.svg">2</object>
-      </button>
-      <button>
-        <object type="image/svg+xml" data="img/icons/3F.svg">3F</object>
-      </button>
-      <button>
-        <object type="image/svg+xml" data="img/icons/3R.svg">3R</object>
-      </button>
-    </section>
-    <section class="controls">
-      <button id="zoom-out">
-        <object type="image/svg+xml" data="img/icons/zoom-out.svg">Zoom <br />Out</object>
-      </button>
-      <button id="reset">
-        <object type="image/svg+xml" data="img/icons/reset.svg">100%</object>
-      </button>
-      <button id="zoom-in">
-        <object type="image/svg+xml" data="img/icons/zoom-in.svg">Zoom <br />In</object>
-      </button>
-    </section>
-  </nav>
 
   <script>
     window.onload = function () {

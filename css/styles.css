@@ -33,7 +33,17 @@ nav {
     background: var(--white);
     border-left: 1px solid var(--gray) !important;
     height: 100vh;
-    padding: var(--sm-space);
+    display: flex !important;
+    flex-direction: column;
+    padding: 0px var(--sm-space);
+}
+
+#floor {
+    padding-top: var(--sm-space);
+}
+
+.controls {
+    padding-bottom: var(--sm-space);
 }
 
 button {
