@@ -12,13 +12,21 @@
 }
 
 nav {
+    display: flex;
     position: absolute;
+    z-index: 999;
     bottom: var(--view-padding);
     right: var(--view-padding);
 }
 
+/*zoom*/
 .controls button {
-    margin-bottom: var(--view-padding);
+    margin-bottom: var(--btn-spacing);
+    display: block;
+}
+
+#floor {
+    margin-bottom: auto;
 }
 
 #floor button {
