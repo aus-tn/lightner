@@ -53,12 +53,19 @@ button object {
     width: 30px;
 }
 
-button:active,
+button:active object,
 button:focus,
 button:hover,
 .btn-active {
     background-color: var(--teal);
-    color: var(--white);
+}
+
+/*icons turn white*/
+button:active object,
+button:focus object,
+button:hover object,
+.btn-active object {
+    filter: brightness(1000%); 
 }
 
 #logo {
