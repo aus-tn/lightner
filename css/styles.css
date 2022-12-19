@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 /*vars*/
 :root {
     /*colors*/
@@ -53,7 +57,6 @@ button object {
     width: 30px;
 }
 
-button:active object,
 button:focus,
 button:hover,
 .btn-active {
@@ -61,7 +64,6 @@ button:hover,
 }
 
 /*icons turn white*/
-button:active object,
 button:focus object,
 button:hover object,
 .btn-active object {
