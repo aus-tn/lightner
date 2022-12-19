@@ -35,15 +35,16 @@ nav {
     height: 100vh;
     display: flex !important;
     flex-direction: column;
-    padding: 0px var(--sm-space);
+    padding: 0px var(--xs-space) !important;
 }
 
 #floor {
-    padding-top: var(--sm-space);
+    padding-top: var(--xs-space);
 }
 
 .controls {
-    padding-bottom: var(--sm-space);
+    margin-top: auto;
+    padding-bottom: var(--xs-space);
 }
 
 button {
