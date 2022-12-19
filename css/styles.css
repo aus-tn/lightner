@@ -20,13 +20,15 @@ html, body {
 header {
     position: absolute;
     z-index: 999;
+    width: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 82%, rgba(255,255,255,0) 100%);
 }
 
 #header-container {
     margin-top: var(--large-spacing);
-    display:flex !important;
+    display: flex !important;
+    height: 50px;
 }
 
 #logo {
@@ -36,6 +38,13 @@ header {
 #logo img {
     width: 108px;
     height: auto;
+    margin-top:6px
+}
+
+#floor {
+    display:flex;
+    position: absolute;
+    right: var(--medium-spacing);
 }
 
 main {
