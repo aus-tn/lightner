@@ -13,13 +13,17 @@ html, body {
     --btn-spacing: 10px;
     /*spacing*/
     --small-spacing: 20px;
-    --medium-padding: 40px;
+    --medium-spacing: 40px;
 }
 
 header {
     display:flex;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 82%, rgba(255,255,255,0) 100%);
+}
+
+#logo {
+    margin-left: var(--medium-spacing);
 }
 
 #logo img {
@@ -45,18 +49,17 @@ main {
 }
 
 nav {
-    display: flex !important;
     position: absolute;
     z-index: 999;
-    bottom: var(--medium-padding);
-    right: var(--medium-padding);
-}
-
-.controls {
+    bottom: 0;
     width: 100%;
-    text-align:center;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 82%, rgba(255,255,255,0) 100%);
+}
+.controls {
+    display: flex !important;
+    justify-content: center;
+    padding-bottom: var(--medium-spacing);
 }
 
 button {
@@ -66,8 +69,7 @@ button {
     width: var(--btn-size);
     border-radius: 30px;
     border: 3px solid var(--teal);
-    margin-bottom: var(--btn-spacing);
-    display: block;
+    margin-left: var(--btn-spacing);
     /*for centering icon*/
     display: flex !important;
     align-items: center;
@@ -75,7 +77,7 @@ button {
 }
 
 button:last-of-type {
-    margin-bottom: 0;
+    margin-left: 0;
 }
 
 button object {
